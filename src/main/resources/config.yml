@@ -1,0 +1,19 @@
+# ComandSpawner Plugin Configuration
+
+# Define command blocks
+commandBlocks:
+  block1:
+    location: "world,100,64,100" # Location of the block (world, x, y, z)
+    range: 10 # Range in blocks
+    command: "say Hello, %player%! This is block 1." # Command to execute
+    cooldown: 60 # Cooldown in seconds for this block
+  block2:
+    location: "world,200,64,200"
+    range: 15
+    command: "give %player% diamond 1"
+    cooldown: 120
+
+# Define block types
+blockTypes:
+  block1: STONE # Material type of block1
+  block2: IRON_BLOCK # Material type of block2
