@@ -1,0 +1,5 @@
+name: ComandSpawner
+version: '${project.version}'
+main: com.afelia.comandspawner.ComandSpawner
+api-version: '1.19'
+load: STARTUP
