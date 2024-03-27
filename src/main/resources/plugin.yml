@@ -1,5 +1,17 @@
 name: ComandSpawner
-version: '${project.version}'
+version: 1.0
+api: 1.19
+description: A Minecraft plugin that allows you to create command blocks which execute commands when players are nearby.
+author: YourName
 main: com.afelia.comandspawner.ComandSpawner
-api-version: '1.19'
-load: STARTUP
+
+commands:
+  commandspawners:
+    description: Reload the Command Spawners plugin configuration
+    usage: /commandspawners reload
+    permission: commandspawners.reload
+
+permissions:
+  commandspawners.reload:
+    description: Allows players to reload the Command Spawners plugin configuration
+    default: op
